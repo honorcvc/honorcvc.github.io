@@ -1,0 +1,62 @@
+body {
+    font-family: Tahoma;
+}
+
+h1 {
+  text-align: center;
+  margin: 15px 15px;
+  font-size: 3.1vw; // relative to the viewport's width
+   font-size: 3.1vh; // relative to the viewport's height
+   font-size: 3.1vm; // relative to the ratio width/height of the viewport
+}
+h2 {
+  font-size: 2.1vw;
+}
+p{
+  font-size: 2vw;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+#menu {
+  padding: 5px 10px;
+  background-color: midnightblue;
+  text-align: center;
+}
+
+#images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50;
+  height: auto;
+}
+#images::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.right {
+  float:right;
+  width: 50%
+}
+.left {
+  float:left;
+  width: 50%
+}
+
+#about {
+
+}
+.menu-item{
+  font-size: 16px;
+  color: white;
+  margin: 0px 10px;
+  text-decoration: none;
+
+  font-size: 1.3vw; // relative to the viewport's width
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
