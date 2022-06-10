@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset= "utf-8">
+      <meta name= "viewport" content="width=device-width, initial-scale=1">
+      <title>gtwcvb</title>
+  </head>
+    <link rel="stylesheet" href="styles.css">
+  <body>
+<h1>
+<a style="color: inherit; text-decoration:none;" href="index.html">Georgia Tech Women's Club Volleyball</a>
+</h1>
+ <!--<h1 style="text-align:center;">Georgia Tech Women's Club Volleyball</h1> -->
+    <div id="menu">
+      <h3>
+        <a class="menu-item" href="page1.html">CLUB UPDATES</a>
+        <a class="menu-item" href="page2.html">UPCOMING SCHEDULE</a>
+        <a class="menu-item" href="page3.html">IMPORTANT LINKS FOR TRYOUTS</a>
+        <a class="menu-item" href="page4.html">CONTACTS US</a>
+    </div>
+    <br>
+  <!--  <div id="images">
+      <img id="images" class="right" src="pic1.jpeg" alt="pic1" style="width:50%">
+      <img id="images" class="left" src="pic2.jpeg" alt="pic2" style="width:50%">
+    </div> -->
+
+<!--
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .left {
+      padding: 20px;
+      float: left;
+      width: 20%; /* The width is 20%, by default */
+    }
+
+    .main {
+      padding: 20px;
+      float: left;
+      width: 60%; /* The width is 60%, by default */
+    }
+
+    .right {
+      padding: 20px;
+      float: left;
+      width: 20%; /* The width is 20%, by default */
+    }
+
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width: 80px) {
+      .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+    </style>
+    </head>
+    <body>
+
+
+    <div class="left">
+      <img src="logo.jpeg" style="width:100%;">
+    </div>
+
+    <div class="main">
+      <p>main</p>
+    </div>
+
+
+    <div class="right">
+      <img src="logo.jpeg" style="width:100%;">
+    </div>
+
+
+
+
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active {
+      background-color: #717171;
+    }
+    /* Fading animation */
+    .fade {
+      animation-name: slides;
+      animation-duration: 1.7s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+  </head> -->
+
+    <body>
+
+    <div class="slideshow-container">
+<center>
+    <div class="mySlides fade">
+      <img src="pic1.jpeg" style="width:55%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="pic2.jpeg" style="width:55%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="logo.jpeg" style="width:55%">
+    </div>
+</center>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+
+
+      </h3>
+<br>
+
+      <p>Welcome to the page of Georgia Tech's women's club volleyball team! We are a competetive fall and
+      spring club sport that travels to and hosts multiple tournaments
+      each semester, including the NCVF National Championships.</p>
+      <p>Our tryouts will be held within the first few weeks of the fall semester, and then again in the beginning
+      of spring. All information for tryouts will be posted both on this website and on the Instagram.
+       We are excited by your interest in our club and hope to see you back in the fall!</p>
+
+
+
+
+  <!--  <h2>Club Updates</h2>
+    <div id="updates">
+      <p>Our season will begin when the new school year does! We will be offering open gyms the week of
+      8/21/2022. Our tryouts are expected to happen the week of 9/5/2022. Official dates will be confirmed and posted to this
+      website, the Google Calendar, and to our Instagram as we get closer to those dates!
+      <br>[Tentative dates can be found on our Google Calendar]</p>
+    </div>
+
+
+    <h2>Upcoming Schedule</h2>
+    <div id="schedule">
+      <p>Open gym, tryouts, practice, and tournament dates will be found here:</p>
+      <br>
+      <center><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=MW1lbWV0dTFAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTAyMDQ3MDQzNzQzMDk1NzE1ODkzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=b2dxdmJnbTMwdjZkdWdwNmc1dnN0dDJtZGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%2333B679&color=%237627bb&color=%23AD1457&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe></center>
+    </div>
+
+
+    <h2>Important Links for Tryouts</h2>
+    <div id="links">
+      <p>Tryout Registration Form: Not Available Yet
+      <br>Medical Release Form:
+      <br>Other forms:
+      </p>
+    </div>
+
+
+    <h2>Contact Us</h2>
+    <div id="contact">
+      <p>Email: <a href="mailto:gtwcvball@gmail.com?subject=Question">gtwcvball@gmail.com</a>
+      <br>Instagram: <a href="https://www.instagram.com/gtclubvball/?hl=en">@gtclubvball</a></p>
+    </div>
+<br><br><br>
+-->
+
+<!--<img src="logo.jpeg" alt="logo" width="150" height="110"> Contact us at <a href="mailto:gtwcvball@gmail.com?subject=Question">gtwcvball@gmail.com</a>-->
+<br><br>
+Georgia Tech Women's Club Vollyball, Published 2022
+  </body>
+</html>
