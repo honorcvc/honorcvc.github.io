@@ -6,22 +6,30 @@ h1 {
   text-align: center;
   margin: 15px 15px;
   font-size: 3.1vw; // relative to the viewport's width
-   font-size: 3.1vh; // relative to the viewport's height
-   font-size: 3.1vm; // relative to the ratio width/height of the viewport
+  font-size: 3.1vh; // relative to the viewport's height
+  font-size: 3.1vm; // relative to the ratio width/height of the viewport
 }
 h2 {
   font-size: 2.1vw;
 }
+
+h3{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
 p{
-  font-size: 2vw;
+  text-align: center;
+  font-size: 2.5vw;
   padding-left: 4%;
   padding-right: 4%;
 }
 
 #menu {
-  padding: 5px 10px;
   background-color: midnightblue;
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 #images {
@@ -51,12 +59,57 @@ p{
 .menu-item{
   font-size: 16px;
   color: white;
-  margin: 0px 10px;
+  margin: 0px 2%;
   text-decoration: none;
-
   font-size: 1.3vw; // relative to the viewport's width
 }
 
 .menu-item:hover {
   text-decoration: underline;
+}
+
+.slideshow-container {
+  width:55%;
+  float:left;
+  margin: 20px
+}
+@media only screen and (max-width: 600px){
+  .slideshow-container{
+    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+
+  h1{
+    font-size: 4vw;
+  }
+
+  p{
+    font-size: 4vw;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  h2{
+    font-size: 3vw
+  }
+}
+
+#page4{
+
+}
+#page1{
+
+}
+#page3{
+
+}
+#page2{
+
 }
