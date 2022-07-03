@@ -2,6 +2,10 @@ body {
     font-family: Tahoma;
 }
 
+#header{
+  width:100%;
+}
+
 h1 {
   text-align: center;
   margin: 15px 15px;
@@ -30,6 +34,10 @@ p{
   text-align: center;
   padding-top: 5px;
   padding-bottom: 15px;
+}
+
+#dmenu {
+  display:none;
 }
 
 #images {
@@ -74,6 +82,58 @@ p{
   margin: 20px
 }
 @media only screen and (max-width: 600px){
+
+  #dmenu{
+    display: block;
+  }
+
+  /* Dropdown Button */
+/*.dropbtn {
+  background-color: midnightblue;
+  color: white;
+  padding: 3.75vw;
+  font-size: 3.75vw;
+  border: none;
+}*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgsba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 2.75vw;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+  }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: none;}
+
+  #menu {
+    display: none;
+  }
   .slideshow-container{
     width:100%;
     display: block;
@@ -83,7 +143,7 @@ p{
   }
 
   h1{
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   p{
