@@ -2,38 +2,60 @@ body {
     font-family: Tahoma;
 }
 
-#header{
-  width:100%;
+@font-face {
+  font-family: Heebo;
+  src: url(/Users/honorcrandall/Library/Fonts/Heebo-VariableFont_wght.ttf);
 }
-
+@font-face {
+  font-family: Oswald;
+  src: url(/Users/honorcrandall/Library/Fonts/Oswald-VariableFont_wght.ttf);
+}
+#page1{
+  background-color:#131e40;
+}
 h1 {
-  text-align: center;
-  margin: 15px 15px;
-  font-size: 3.1vw; // relative to the viewport's width
-  font-size: 3.1vh; // relative to the viewport's height
-  font-size: 3.1vm; // relative to the ratio width/height of the viewport
+  text-align: left;
+  margin: 5% 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 34px;
 }
 h2 {
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 2.1vw;
 }
 
 h3{
+  font-family: "Heebo", Arial, sans-serif;
   margin-top: 10px;
   margin-bottom: 0px;
 }
 
 p{
+  font-family: "Heebo", Arial, sans-serif;
   text-align: center;
   font-size: 2.5vw;
   padding-left: 4%;
   padding-right: 4%;
 }
-
+.icon {
+  float:left;
+  width:100px;
+  margin-top:-18px;
+  margin-left: 75px;
+  margin-right: 18px;
+}
 #menu {
-  background-color: midnightblue;
-  text-align: center;
+  border-radius: 15px;
+  height: 60px;
+  margin-left:75px;
+  margin-right: 75px;
+  background-color: #314475;
+  text-align: left;
   padding-top: 5px;
   padding-bottom: 15px;
+  padding-left: 10px;
 }
 
 #dmenu {
@@ -61,31 +83,83 @@ p{
   width: 50%
 }
 
-#about {
-
+.column{
+  width:64%;
+}
+.row2{
+  width:100%;
 }
 .menu-item{
-  font-size: 16px;
+  line-height: 55px;
+  font-family: "Heebo", Arial, sans-serif;
+  font-size: 18px;
   color: white;
-  margin: 0px 2%;
+  margin: 0px 1%;
   text-decoration: none;
-  font-size: 1.3vw; // relative to the viewport's width
 }
 
 .menu-item:hover {
-  text-decoration: underline;
+  background: #c2bd6b;
+  border-radius: 35px;
+  padding: 0px 20px;
+  line-height: 50px !important;
+  margin: auto;
+}
+
+.movebox {
+   box-shadow: 10px 10px 5px #c4c4c4;
+   transition: transform .2s; /* Animation */
+}
+.movebox:hover {
+  transform: scale(.95);
 }
 
 .slideshow-container {
+  transition: transform .2s;
   width:55%;
   float:left;
-  margin: 20px
+  margin-right:7%;
 }
-@media only screen and (max-width: 600px){
+.slideshow-container:hover {
+  transform: scale(.95);
+}
+#everythingelse{
+  margin-top:1.9%;
+  background-color:white;
+  border-radius:15px;
+  margin-left:75px;
+  margin-right:75px;
+}
+.movebox{
+  float:left;
+  width: 36%;
+  height: 17vw;
+  margin:2%;
+  margin-right: 5%;
+  margin-top: 6%;
+  border-radius: 15px;
+}
 
+@media only screen and (max-width: 1000px){
+
+
+.icon{
+  display: none;
+}
+#everythingelse{
+  margin-left:0px;
+  margin-right:0px;
+}
   #dmenu{
     display: block;
   }
+.column{
+  width:100%;
+}
+.movebox{
+  width:50%;
+  height: 10%;
+}
 
   /* Dropdown Button */
 /*.dropbtn {
@@ -96,7 +170,10 @@ p{
   border: none;
 }*/
 
-/* The container <div> - needed to position the dropdown content */
+.dropbtn {
+  border:none;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -143,11 +220,14 @@ p{
   }
 
   h1{
-    font-size: 5vw;
+    font-size: 4vw;
+    text-align: left;
+    margin-bottom: 0%;
+    margin-top: 5%
   }
 
   p{
-    font-size: 4vw;
+    font-size: 3vw;
     padding-left: 4%;
     padding-right: 4%;
   }
@@ -159,13 +239,13 @@ p{
   h2{
     font-size: 3vw
   }
-}
+
 
 #page4{
 
 }
 #page1{
-
+  background-color:#131e40
 }
 #page3{
 
